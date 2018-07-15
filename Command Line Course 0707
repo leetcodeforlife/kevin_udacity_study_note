@@ -1,0 +1,25 @@
+Command Line Course 0707
+
+#1 using the VirtualBox application to run the virtual machine, and the vagrant software to configure it.
+#2 Vagrant is the software that configures the VM and lets you share files between your host computer and the VM's filesystem
+#3 open terminal cd Desktop/Shell   --- vagrant up ***[reboot linux os]*** --- vagrant ssh ***[login the VM]  ---- exit or control+c to exit 
+#4 ls ***[list all files, hide file start with. ***], expr ***[calculate]***  , echo ***[print]*** , history ***[show command ran history]***
+#5 curl http://udacity.github.io/ud595-shell/stuff.zip -o things.zi    *** download file from the link ***
+#6 use "\" to escape the speical character
+#7 control+r ***[search history command]*** 
+#8 unzip filename ***[unzip file]***, cat file.txt ***[open txt file]*** , wc ***[word count]***, diff file1 file2 ***[show difference]***, man ***[command dictoionary]***
+#9 tab ***[command auto complition] 
+#10 line based program: sort ***[sort all the element, need control+d to tell the program where to stop]
+#11 less file.txt ***[show txt file, '/srting' search string in the txt, use N to move to next occurance
+#12 vim or nano is command line editor
+#13 when file name has special character, either put filename under '' or use \ to excape special character 
+#14 cd .. ***[use to set directory to parent directory]***, cd ***[go back to home directory]***
+#15 .. means go up directory, . means current direcotry, ../../ means go back to parent's parent's direcotry 
+#16 mv source destination ***[move file to directory]*** 
+#17 cp file1 destination ***[cope file to directory]***
+#18 mkdir directory ***[make new directory]***, rmdir directory ***[remove directory]***, rm -r filename ***[directory can not be moved if it is not empty, rm comand to delete every file under the filename directory]***
+#19 globbing :ls *jpg, ls ?jpg, ls [aeiou]jpg ***[search similar filename under directory]
+#20 cp dir/* dir2 ***[move eveything under dir1 to dir2]
+#21 scp -P 2222 /Users/kevinqi/Desktop/Shell/git/* vagrant@127.0.0.1:.    ***[scp -P 2222 /Users/kevinqi/Desktop/Shell/git/* vagrant@127.0.0.1:.]***
+#22 open -e .bash_profile ***[open bash profile]
+#23 sudo ln -s /Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl /usr/local/bin/subl   ***[link directory to location]***

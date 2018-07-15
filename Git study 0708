@@ -1,0 +1,56 @@
+Git study 0708 
+
+#1 commit will save a snapshot of all files in the repository
+
+#2 git clone the whole repository from one location(git hub) to local location 
+
+#3 cd into git repository, then can use git log, git diff ***[git diff commit1 commit2]***
+git log will show a list of the recent commits with information about them, including commit IDs
+
+#4 change git color git config --global color.ui auto
+
+#5 cmd+shift+h in finder find home directory
+
+#6 git checkout version id ***[rool back to the commit id]***, git checkout branch ***[go to the speicific branch]***
+
+#7 git workspace Download bash_profile_course --> copy the content from bash_profile_course and paste it at the bottom of .bash_profile --> git config --global push.default upstream   ---> git config --global merge.conflictstyle diff3
+
+#8 git init. ***[Initialized empty Git repository in current directory]***
+
+#9 git status, show commit status 
+
+#10 git add **[add file to staging area]**. ---> then can commit to repository 
+
+#11 git commit -m "Commit message"
+
+##12 git status will show all commit history and untracked file in the dictory. if you want to track files, then use git add to add files into staging area and then git commit. now files are still under the same dictory but the added file are now in repository, so that will be tracked. 
+
+#13 git diff   ***[check diff between working dictory and staging area], git diff --staged ***[show diff between staging and repository]***   git reset hard  ***[reset working directory and stagign area]***
+
+#14 branchs is the label for commit
+ git branch ***[show current branches]***
+ git branch branchname ***[create new branches]***
+ git branch -b branchname ***[create new branches and go to the new branch]***
+ git checkout branchname ***[switch to the new branch]***
+
+#15 git merge commit1 commit2
+
+#16 git show commit1 ***[auto check the commit with this parent]***
+
+#17 git branch -d branchname ***[remove the branch label]***
+
+#18 revolve conflict merge ---> git merge commit1 commmit2 ---> open conlict file and make change ---> git status will show both modified for the conflict file ---> git add conflit file --->git commit ---> merge successful 
+
+#19 only local commit can be sent to github remote depository ---> create a reposity on github and write down the url ---> create a remote reposity, git remote -v ***[show all remote repository]*** , git remote add remote_name ulr ***[create new remote repository] ---> git push remote_name branch_name  
+
+#20 git pull remote_name branch_name
+
+#21 fork is like clone from github to github
+
+#22 if there is change on both local and github, to resolve the conflict, first git fetch the github repository to local, the git fetch will copy the git version as a new branch, then git merge to solve the conclit then git push
+
+#23 git pull =git fetch +git merge 
+
+#24 fast-forward merge a and b ---> b is ansestor of a ---> no need to have a new verson to merge a and b ---> just simply update one of the label
+
+#25 git pull request:  person 1 create a new branch on master and make change ---> person commit and push to the github ---> person 1 want person 2 review his change and merge the new branch to the master ---> so person 1 send person 2 pull request ---> once person 2 review and approve the master branch on will be merged by new branch.  
