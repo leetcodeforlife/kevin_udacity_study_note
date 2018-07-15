@@ -1,0 +1,48 @@
+lesson 2: NumPy and Pandas for 1D data 
+#1 NumPy array is similar to list, can be access by index and write loop by elements. But all elements in NumPy array have to be same data type, while list can have different data type as elements. Also, Numpy can have convenient functions. Numpy arrary can be multi dimensional. 
+
+#2 
+np.array([x1,x2,x3,x4]) ***[create numpy array,first create list then conver to numpy array]***
+np.array([x1,x2,x3,x4]).dtype 
+argmax ***[return the index of max value]***
+
+#3 vectiruze opertion on numpy arrary (will go into each element )
+Arithmetic operations-- add+, substract-, multiple*, devide/, exponentiate **
+vector logical operation -- &, |, ~
+Comparison operations between 2 NumPy Arrays -- >,<,==
+
+#4 index array
+a=np.array([1, 2, 3, 2, 1])
+b=np.array([F, F, T, T, T])
+a[b]=[3,2,1] 
+use b array as index 
+
+#5 difference between + vs += 
+"+" will create a new array 
+"+=" will not create the new array, it will just update the array, in place operation 
+
+#6 slice
+suppose a=np.array([1,2,3,4,5])
+k=a[:3]
+k[0]=100
+now a will also update to np.array([100,2,3,4,5])
+
+unlike list, the slice will generate a new list. np array will not generate new array when slicing. So update a sliced array will overwite the origin array. This has to be very careful!! 
+But this also make np array much faster 
+
+#7 panda series vs numpy array 
+pd seriers has more functunality than numpy array. Like pd.series.describe()
+create panda series: pd.series([list])
+
+the biggest different between panda series and numpy array is index 
+numpy array does not have index, can only access element by position 
+a=np.array([1, 2, 3, 2, 1])
+b=np.array(['US', 'CA', 'TR','EG', 'CN'])
+
+pandas series has index 
+a=pd.Series([1,2,3,4,5], index=['US', 'CA', 'TR','EG', 'CN'])
+
+can access element by index, and use iloc to access by position, use loc to access by index
+
+when adding numpy array, all the calculation will based on position
+when adding panda series, all the calculation will based on index
